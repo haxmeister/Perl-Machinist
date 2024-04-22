@@ -39,7 +39,15 @@
 
 =head1 DESCRIPTION
 
-This class provides functions commonly used by machinists when calculating everything from feed rates to material removal rates. It uses the class keyword to reduce the amount of code required. This module is intended to provide return values in the units of measure that machinists expect, even when this makes the underlying math more combersome to implement. For instance, machinists using imperial measures will expect feet or inches depending on the calculation being done but machinists using metric may use meters, centimeters and millimeters. Please pay close attention to the units that these methods are documented to return.
+This class provides functions commonly used by machinists when calculating
+everything from feed rates to material removal rates. It uses the class keyword
+to reduce the amount of code required. This module is intended to provide
+return values in the units of measure that machinists expect, even when this
+makes the underlying math more combersome to implement. For instance, machinists
+using imperial measures will expect feet or inches depending on the calculation
+being done but machinists using metric may use meters, centimeters and
+millimeters. Please pay close attention to the units that these methods are
+documented to return.
 
 =cut
 
@@ -160,7 +168,8 @@ method removal_rate_milling($woc, $doc, $feed_per_minute){
 
  removal_rate_turning( <depth of cut>, <feed per revolution>, <surface speed>)
 
-where "depth of cut" is in millimeters (metric) or inches (imperial). This is using a radial value, not diametric (some CNC lathes use diametric values when setting DOC).
+where "depth of cut" is in millimeters (metric) or inches (imperial). This is
+using a radial value, not diametric (some CNC lathes use diametric values when setting DOC).
 
 where "feed per revolution" is in millimeters (metric) or inches (imperial)
 
@@ -219,4 +228,5 @@ E<lt>haxmeister@hotmail.comE<gt>
 
 This software is copyright (c) 2024 by Joshua S. Day.
 
-This is free software; you can redistribute it and/or modify it under the same terms as the Perl 5 programming language system itself.
+This is free software; you can redistribute it and/or modify it under the same
+terms as the Perl 5 programming language system itself.
